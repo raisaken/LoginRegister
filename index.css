@@ -1,0 +1,174 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin: 2em;
+}
+.background {
+  background-color: rgb(240, 234, 234);
+}
+.loginregister {
+  padding: 2em;
+
+  max-width: 650px;
+}
+.form {
+  padding: 2em;
+  box-shadow: 0 0 2px #000;
+  border-radius: 5px;
+  z-index: -1;
+  background-color: rgb(247, 247, 241);
+}
+.loginregister > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+p span {
+  color: #a02332;
+}
+
+.Login {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 1em 0;
+  font-family: "Poppins", sans-serif;
+}
+.ifyou {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.youcan {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.youcan a {
+  font-weight: 500;
+  color: #a02332;
+}
+.loginoption {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0;
+}
+.google {
+  font-family: "Poppins", sans-serif;
+  color: rgb(26, 173, 231);
+  padding: 0.2em 2em;
+  background-color: rgb(175, 255, 228);
+  border-radius: 5px;
+  font-size: 18px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition-duration: 0.2s;
+  transition-property: transform;
+}
+.google a {
+  text-decoration: none;
+}
+.google:hover {
+  transform: scale(1.1);
+}
+.google a:hover {
+  text-decoration: none;
+}
+.gicon {
+  width: 30px;
+  height: 30px;
+}
+.fa-google {
+  padding: 0 0.5em 0 0;
+}
+
+.fb {
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  transition-duration: 0.2s;
+  transition-property: transform;
+}
+.fb:hover {
+  transform: scale(1.1);
+}
+.fa-facebook {
+  display: flex !important;
+  text-align: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(38, 106, 233);
+  padding-top: 6px;
+  color: #fff;
+}
+
+.apple {
+  padding: 20px 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  /* box-shadow: 0 0 2px #000; */
+  transition-duration: 0.2s;
+  transition-property: transform;
+}
+.apple:hover {
+  transform: scale(1.1);
+}
+.fa-apple {
+  color: #fff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(49, 47, 47);
+  padding-top: 5px;
+  /* transition-duration: 0.2s;
+  transition-property: transform; */
+}
+.fa-apple:hover {
+  /* transform: scale(1.1); */
+}
+
+.name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.Forgot {
+  float: right;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+.pass {
+  border-radius: 5px;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+.g-recaptcha{
+  padding: 1em 0;
+}
+
+
+.Submit {
+  margin: 0.5em 0 0 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  background-color: #a02332 !important;
+  width: 100%;
+  height: 60px;
+}
+@media screen and (max-width: 430px) {
+  .google {
+    width: 50px;
+  }
+  .google a {
+    display: none;
+  }
+}
