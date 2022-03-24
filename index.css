@@ -8,7 +8,8 @@ body {
 }
 .loginregister {
   padding: 2em;
-
+  margin-left: auto;
+  /* margin: 0 0 0 40em; */
   max-width: 650px;
 }
 .form {
@@ -126,11 +127,6 @@ p span {
   border-radius: 50%;
   background-color: rgb(49, 47, 47);
   padding-top: 5px;
-  /* transition-duration: 0.2s;
-  transition-property: transform; */
-}
-.fa-apple:hover {
-  /* transform: scale(1.1); */
 }
 
 .name {
@@ -151,10 +147,9 @@ p span {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
 }
-.g-recaptcha{
+.g-recaptcha {
   padding: 1em 0;
 }
-
 
 .Submit {
   margin: 0.5em 0 0 0;
@@ -170,5 +165,43 @@ p span {
   }
   .google a {
     display: none;
+  }
+  .g-recaptcha > .rc-anchor-normal .rc-anchor-content {
+    width: 141px;
+  }
+  .g-recaptcha > .rc-anchor-normal {
+    width: 246px;
+  }
+  .g-recaptcha > .rc-anchor-normal .rc-anchor-pt {
+    position: relative;
+    width: 71px;
+  }
+  .g-recaptcha {
+    transform: scale(0.77);
+    -webkit-transform: scale(0.77);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
+  .Login{
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .ifyou{
+    font-size: 16px;
+  }
+  .name{
+    font-size: 16px;
+  }
+  .pass{
+    font-size: 14px;
+  }
+  .youcan{
+    font-size: 16px;
+  }
+  .registers{
+    margin-top: -15px;
+  }
+  .loginregister > p{
+    font-size: 24px;
   }
 }

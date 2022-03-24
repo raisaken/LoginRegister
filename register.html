@@ -15,44 +15,43 @@
 </head>
 <body>
     <div class="background">
-    <div class="loginregister">
+    <div class="container"><div class="loginregister">
+      <form class="form" action="/newaccount" method=post oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+          <div class="Login"> Registration</div> 
+         <div class="ifyou" style="padding: 0 0 0.5em 0;">Register and get instant notifications of daily trends !</div>
         
-        <form class="form" action="/newaccount" method=post oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
-            <div class="Login"> Registration</div> 
-           <div class="ifyou" style="padding: 0 0 0.5em 0;">Register and get instant notifications of daily trends !</div>
-          
-            <div class="form-group">
-              <label for="exampleInputEmail1" class="name">Full Name</label>
-              <input type="text" class="form-control pass" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" required>
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="name">Full Name</label>
+            <input type="text" class="form-control pass" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" required>
+          </div>
+          <div class="form-group">
+              <label for="exampleInputEmail1" class="name">Email Address</label>
+              <input type="email" class="form-control pass" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" required>
             </div>
             <div class="form-group">
-                <label for="exampleInputEmail1" class="name">Email Address</label>
-                <input type="email" class="form-control pass" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" required>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1" class="name">Mobile Number</label>
-                <input type="tel" class="form-control pass" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Phone No." >
-              </div>
-            <div class="form-row">
+              <label for="exampleInputEmail1" class="name">Mobile Number</label>
+              <input type="tel" class="form-control pass" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Phone No." >
+            </div>
+          <div class="form-row">
+              <div class="col-md-6 mb-3">
+                  <label for="validationCustom01"  class="name">Password</label>
+                  <input type="password" class="form-control  pass" id="validationCustom01" placeholder="Password" name="up" required>
+                 
+                </div>
                 <div class="col-md-6 mb-3">
-                    <label for="validationCustom01"  class="name">Password</label>
-                    <input type="password" class="form-control  pass" id="validationCustom01" placeholder="Password" name="up" required>
-                   
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="validationCustom02"  class="name">Confirm Password</label>
-                    <input type="password" class="form-control  pass" id="validationCustom02" name="up2" placeholder="Confirm Password">
-                   
-                  </div>
-             
-              </div>
+                  <label for="validationCustom02"  class="name">Confirm Password</label>
+                  <input type="password" class="form-control  pass" id="validationCustom02" name="up2" placeholder="Confirm Password">
+                 
+                </div>
+           
+            </div>
 
-              
-           <div class="youcan">I read and Accept <a href="">Terms and Conditions</a> of Egp Nepal</div>
-           <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
-            <button type="submit" class="btn btn-primary Submit">SIGN UP</button>
-          </form>
-    </div>
+            
+         <div class="youcan">I read and Accept <a href="">Terms and Conditions</a> of Egp Nepal</div>
+         <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
+          <button type="submit" class="btn btn-primary Submit registers">SIGN UP</button>
+        </form>
+  </div></div>
 </div>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="./index.js"></script>
