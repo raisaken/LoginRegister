@@ -10,7 +10,7 @@ body {
   padding: 2em;
   margin-left: auto;
   /* margin: 0 0 0 40em; */
-  max-width: 650px;
+  max-width: 600px;
 }
 .form {
   padding: 2em;
@@ -31,8 +31,11 @@ p span {
 .Login {
   font-size: 30px;
   font-weight: 500;
-  margin: 0 0 1em 0;
+  /* margin: 0 0 1em 0; */
   font-family: "Poppins", sans-serif;
+}
+.ifyoucan {
+  margin: 1em 0;
 }
 .ifyou {
   font-size: 18px;
@@ -47,52 +50,78 @@ p span {
 .youcan a {
   font-weight: 500;
   color: #a02332;
+  text-decoration: none;
 }
+.youcan a:hover {
+  text-decoration: none;
+}
+
 .loginoption {
   display: flex;
-  justify-content: space-between;
+  gap: 2em;
   margin: 2em 0;
 }
 .google {
   font-family: "Poppins", sans-serif;
   color: rgb(26, 173, 231);
-  padding: 0.2em 2em;
   background-color: rgb(175, 255, 228);
   border-radius: 5px;
   font-size: 18px;
-  width: 350px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  transition-duration: 0.2s;
-  transition-property: transform;
+  overflow: hidden;
+  height: 65px;
+  white-space: nowrap;
+  width: 380px;
 }
 .google a {
   text-decoration: none;
+  padding: 0 1em;
+  display: inline-block;
 }
-.google:hover {
-  transform: scale(1.1);
-}
+
 .google a:hover {
   text-decoration: none;
 }
 .gicon {
   width: 30px;
   height: 30px;
+  margin: 0 0 0 0;
 }
 .fa-google {
   padding: 0 0.5em 0 0;
 }
 
 .fb {
-  padding: 20px;
+  font-size: 18px;
+  padding: 20px 20px 20px 0px;
   background: rgb(255, 255, 255);
   border-radius: 5px;
-  transition-duration: 0.2s;
-  transition-property: transform;
+  width: 65px;
+  height: 65px;
+  overflow: hidden;
+  display: flex;
+  margin-left: auto;
+  flex-direction: row;
+  transition: 1s;
+  white-space: nowrap;
 }
-.fb:hover {
-  transform: scale(1.1);
+
+.fb a {
+  text-decoration: none;
+  padding: 0 1em;
+  display: inline-block;
+}
+.fb a:hover {
+  text-decoration: none;
+}
+.text-active {
+  width: 380px !important;
+  transition: width 1s !important;
+}
+.loginoption .text-inactive {
+  width: 65px;
+  transition: width 1s !important;
 }
 .fa-facebook {
   display: flex !important;
@@ -106,29 +135,6 @@ p span {
   color: #fff;
 }
 
-.apple {
-  padding: 20px 20px;
-  background: rgb(255, 255, 255);
-  border-radius: 5px;
-  /* box-shadow: 0 0 2px #000; */
-  transition-duration: 0.2s;
-  transition-property: transform;
-}
-.apple:hover {
-  transform: scale(1.1);
-}
-.fa-apple {
-  color: #fff;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: rgb(49, 47, 47);
-  padding-top: 5px;
-}
-
 .name {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -136,9 +142,14 @@ p span {
 }
 .Forgot {
   float: right;
-  text-decoration: none;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
+}
+.Forgot a {
+  text-decoration: none;
+}
+.Forgot a:hover {
+  text-decoration: none;
 }
 .pass {
   border-radius: 5px;
@@ -159,12 +170,28 @@ p span {
   width: 100%;
   height: 60px;
 }
+.loginoptionresp{
+  display: none;
+}
+
 @media screen and (max-width: 430px) {
-  .google {
-    width: 50px;
-  }
-  .google a {
+  .loginoption {
     display: none;
+  }
+  .loginoptionresp {
+    display: flex;
+    padding: 1em 0;
+  }
+  .loginoptionresp {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+  }
+  .resgicon {
+    padding: 0 0 0 0.5em;
+  }
+  .resficon {
+    padding: 0.1em 0 0 0.5em;
   }
   .g-recaptcha > .rc-anchor-normal .rc-anchor-content {
     width: 141px;
@@ -182,26 +209,27 @@ p span {
     transform-origin: 0 0;
     -webkit-transform-origin: 0 0;
   }
-  .Login{
+  .Login {
     font-size: 22px;
     font-weight: 600;
   }
-  .ifyou{
+  .ifyou {
     font-size: 16px;
   }
-  .name{
+  .name {
     font-size: 16px;
   }
-  .pass{
+  .pass {
     font-size: 14px;
   }
-  .youcan{
+  .youcan {
     font-size: 16px;
   }
-  .registers{
+
+  .registers {
     margin-top: -15px;
   }
-  .loginregister > p{
+  .loginregister > p {
     font-size: 24px;
   }
 }
