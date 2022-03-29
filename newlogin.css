@@ -1,0 +1,270 @@
+body {
+  font-family: "Lato", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.loginpage {
+  background-image: url("/login-bg.png");
+  min-height: 100vh;
+  padding: 50px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.registerpage {
+  min-height: 100vh;
+  padding: 50px 0px;
+  background-color: rgba(148, 31, 50, 0.95);
+}
+
+.registerpage .auth-page-content h2 {
+  color: #fff;
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.registerpage .auth-page-content p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.registerpage .auth-page-icon img {
+  width: 130px;
+}
+.forgotpassword .auth-page-content h2 {
+  color: #fff;
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.forgotpassword .auth-page-content p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.forgotpassword .auth-page-icon img {
+  width: 130px;
+}
+
+.auth-page-content {
+  text-align: center;
+}
+.auth-welcome-title {
+  margin-bottom: 20px;
+}
+
+.auth-welcome-title h2 {
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 600;
+}
+
+.auth-welcome-title h2 a {
+  color: #a02332;
+  text-decoration: none;
+}
+
+.auth-welcome-title h2 a:hover {
+  color: #a02332;
+  text-decoration: none;
+}
+
+.login-box {
+  max-width: 500px;
+}
+
+.auth-wrapper {
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.auth-wrapper.register {
+  background: #ffffff;
+  box-shadow: 10px 10px 20px #7a1317;
+  border-radius: 5px;
+}
+
+.auth-wrapper .auth-title h3 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.auth-wrapper .auth-title p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.auth-wrapper .auth-title p a {
+  text-decoration: none;
+  color: #a02332;
+}
+
+.auth-wrapper .social-icons {
+  margin-bottom: 20px;
+}
+
+.auth-wrapper .social-icons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.auth-wrapper .social-icons ul li a {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #e9f1ff;
+  border-radius: 9px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #4285f4;
+}
+.auth-wrapper .social-icons ul li i {
+  margin-right: 5px;
+  padding: 0px;
+}
+.auth-wrapper .social-icons ul li a span {
+  display: none;
+}
+.auth-wrapper .social-icons ul li:first-child a span {
+  display: inline;
+}
+
+.auth-wrapper .social-icons ul li .fa-google {
+  background: conic-gradient(
+      from -45deg,
+      #ea4335 110deg,
+      #4285f4 90deg 180deg,
+      #34a853 180deg 270deg,
+      #fbbc05 270deg
+    )
+    73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #fff;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.auth-wrapper .social-icons ul li .fa-facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: rgb(38, 106, 233);
+  color: #fff;
+  height: 22px;
+  width: 22px;
+  line-height: 22px;
+  padding: 2px 0px;
+}
+
+.auth-wrapper .auth-forms form {
+}
+.auth-wrapper .auth-forms form .form-label {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+}
+.auth-wrapper .auth-forms form .form-control {
+  background: #fff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 9px;
+}
+.auth-wrapper .auth-forms form .auth-extra {
+}
+
+.auth-wrapper .auth-forms form .auth-extra .form-check-label {
+  font-size: 13px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.auth-wrapper .auth-forms form .auth-extra a {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4285f4;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+.auth-wrapper .auth-forms form .auth-submit button {
+  background: #941f32;
+  box-shadow: 4px 4px 19px rgba(119, 147, 65, 0.3);
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  padding: 8px;
+}
+.auth-form-go-back {
+  margin-top: 10px;
+}
+.auth-form-go-back a {
+  text-decoration: none;
+}
+.forgotpassword .fpleft {
+  background: #941f32;
+}
+.forgotpassword .fpright {
+  background: #ccc;
+
+  display: flex;
+  justify-content: center;
+}
+.forgotpasswordwrapper {
+  border: none;
+  box-shadow: none;
+  padding: 50px 0;
+  background: #ccc;
+}
+.forgotpasswordwrapper .auth-title h3 {
+  font-size: 40px;
+}
+.forgotpasswordwrapper .auth-title p {
+  font-size: 16px;
+  color: rgb(85, 83, 83);
+  margin-bottom: 50px;
+}
+.forgotpassword .fpbg {
+  background: #941f32;
+}
+.forgotpassword-form .auth-wrapper .auth-forms form .auth-submit {
+  margin-top: 25px;
+}
+.forgotpassword-form .auth-wrapper .auth-forms form .auth-submit button {
+  width: 50%;
+}
+
+@media (max-width: 565px) {
+  .login-box {
+    width: 100%;
+  }
+
+  .auth-wrapper {
+    padding: 15px;
+  }
+}
