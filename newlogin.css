@@ -5,7 +5,7 @@ body {
 }
 
 .loginpage {
-  background-image: url("/login-bg.png");
+  background-image: url("./login-bg.png");
   min-height: 100vh;
   padding: 50px 0px;
   background-repeat: no-repeat;
@@ -13,19 +13,46 @@ body {
   background-position: center center;
   background-attachment: fixed;
 }
+.loginpage:after,
+.registerpage:after,
+.forgotpassword:after {
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.8)
+  );
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
 .registerpage {
-  min-height: 100vh;
+  background-image: url("./login-bg.png");
   padding: 50px 0px;
-  background-color: rgba(148, 31, 50, 0.95);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  /* background-color: rgba(148, 31, 50, 0.95); */
 }
 
-.registerpage .auth-page-content h2 {
+.registerpage .auth-page-content h2,
+.forgotpassword .auth-page-content h2 {
+  z-index: 2;
+  position: relative;
   color: #fff;
   font-size: 35px;
   line-height: 40px;
   font-weight: 700;
 }
-.registerpage .auth-page-content p {
+.registerpage .auth-page-content p,
+.forgotpassword .auth-page-content p {
+  z-index: 2;
+  position: relative;
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   line-height: 24px;
@@ -33,7 +60,19 @@ body {
 }
 
 .registerpage .auth-page-icon img {
+  z-index: 2;
+  position: relative;
   width: 130px;
+}
+
+.forgotpassword {
+  background-image: url("./login-bg.png");
+  min-height: 100vh;
+  padding: 50px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 .forgotpassword .auth-page-content h2 {
   color: #fff;
@@ -50,6 +89,8 @@ body {
 
 .forgotpassword .auth-page-icon img {
   width: 130px;
+  z-index: 2;
+  position: relative;
 }
 
 .auth-page-content {
@@ -57,16 +98,21 @@ body {
 }
 .auth-welcome-title {
   margin-bottom: 20px;
+  position: relative;
+  z-index: 3;
 }
 
 .auth-welcome-title h2 {
   font-size: 25px;
   line-height: 35px;
   font-weight: 600;
+  color: #fff;
 }
 
 .auth-welcome-title h2 a {
   color: #a02332;
+  /* color: #fff; */
+
   text-decoration: none;
 }
 
@@ -77,6 +123,8 @@ body {
 
 .login-box {
   max-width: 500px;
+  z-index: 2;
+  position: relative;
 }
 
 .auth-wrapper {
@@ -90,7 +138,7 @@ body {
 .auth-wrapper.register {
   background: #ffffff;
   -webkit-box-shadow: 10px 10px 20px #7a1317;
-  box-shadow: 10px 10px 20px #7a1317;
+  box-shadow: 10px 10px 20px #483d3e;
   border-radius: 5px;
 }
 
@@ -253,10 +301,10 @@ body {
   font-weight: 500;
   line-height: 34px;
 }
-.forgotpassword .forgotpasswordleft {
-  background: #941f32;
-}
+
 .forgotpassword .forgotpasswordright {
+  z-index: 2;
+  position: relative;
   background: #eceef3;
 
   display: -webkit-box;
@@ -268,7 +316,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
 }
-.forgotpasswordwrapper {
+.forgotpassword .forgotpasswordwrapper {
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -285,9 +333,7 @@ body {
   margin-bottom: 50px;
   line-height: 26px;
 }
-.forgotpassword .fpbg {
-  background: #941f32;
-}
+
 .forgotpassword-form .auth-wrapper .auth-forms form .auth-submit {
   margin-top: 25px;
 }
